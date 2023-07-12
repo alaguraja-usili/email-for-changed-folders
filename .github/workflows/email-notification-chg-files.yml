@@ -50,7 +50,7 @@ jobs:
           # Required sender full name (address can be skipped):
           from: alagu.rar@gmail.com
           # Optional plain body:
-          body: Build job of ${{github.repository}} completed successfully to list changed files!. echo ${{ steps.changed-files.outputs.all_changed_files }}
+          body: ${{ github.event.head_commit.message }} - Build job of ${{github.repository}} completed successfully to list changed files!. echo ${{ steps.changed-files.outputs.all_changed_files }}
           # Optional HTML body read from file:
           #Vijai html_body: file://README.html
           # Optional carbon copy recipients:
