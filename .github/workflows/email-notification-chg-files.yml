@@ -40,9 +40,9 @@ jobs:
           # Optional whether this connection use TLS (default is true if server_port is 465)
           secure: true
           # Optional (recommended) mail server username:
-          username: ${{secrets.MAIL_USERNAME}}
+          username: ${{secrets.USER_EMAIL1}}
           # Optional (recommended) mail server password:
-          password: ${{secrets.MAIL_PASSWORD}}
+          password: ${{secrets.USER_PASSWORD1}}
           # Required mail subject:
           subject: ALV API Controllers-GitHub fol
           # Required recipients' addresses:
